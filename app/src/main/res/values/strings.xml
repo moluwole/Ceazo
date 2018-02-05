@@ -1,0 +1,30 @@
+<resources>
+    <string name="app_name">Ceazo</string>
+
+    <string name="city_profile">Lagos, Nigeria</string>
+    <string name="category_profile">Makeup Artist</string>
+    <string name="name_profile">Lara Adebimpe</string>
+
+    <string name="photos_profile">0\nPhotos</string>
+    <string name="followers_profile">0\nFollowers</string>
+    <string name="following_profile">0\nFollowing</string>
+
+
+    <string name="title_edit_user_settings"> Edit User Settings </string>
+    <string name="field_view_edit_settings"> view and edit details of your Ceazo settings </string>
+
+    <string name="logo_description">Logo of Ceazo App</string>
+    <string name="logo_caption">CEAZO</string>
+
+    <string name="create_new_account">Create a New Account</string>
+    <string name="manage_account">Already a Member? Log In</string>
+
+    <string name="personal_label">Personal Information</string>
+    <string name="first_name_label">FIRST NAME</string>
+    <string name="last_name_label">LAST NAME</string>
+    <string name="email_label">EMAIL ADDRESS</string>
+    <string name="account_label">Account Information</string>
+    <string name="username_label">USERNAME</string>
+    <string name="password_label">PASSWORD</string>
+    <string name="phone_label">PHONE NUMBER</string>
+</resources>

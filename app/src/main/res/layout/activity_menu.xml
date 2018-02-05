@@ -1,0 +1,130 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@android:color/white"
+    tools:context=".activity.MenuActivity">
+
+    <!-- toolbar -->
+    <RelativeLayout
+        android:id="@+id/rLTop"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <include layout="@layout/snippet_brand_register"/>
+
+    </RelativeLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="20dp"
+        android:layout_below="@+id/rLTop"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="70dp"
+        android:layout_marginLeft="30dp">
+    <RelativeLayout
+        android:id="@+id/rLMiddle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/RegisterAccount"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/account_label"
+            android:textSize="18sp"
+            android:textColor="@color/colorPrimary"
+            android:layout_marginBottom="40dp"/>
+
+        <TextView
+            android:id="@+id/UsernameLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/username_label"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/RegisterAccount"
+            android:labelFor="@+id/UsernameLabel"/>
+
+        <EditText
+            android:id="@+id/text_register_username"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/UsernameLabel"
+            android:inputType="text"
+            tools:ignore="LabelFor" />
+
+        <TextView
+            android:id="@+id/PasswordLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/password_label"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/text_register_username"
+            android:labelFor="@+id/text_register_password"/>
+
+        <EditText
+            android:id="@+id/text_register_password"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/PasswordLabel"
+            android:inputType="textPassword"/>
+
+        <TextView
+            android:id="@+id/PhoneLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="20dp"
+            android:text="@string/phone_label"
+            android:layout_marginBottom="10dp"
+            android:layout_below="@+id/text_register_password"
+            android:labelFor="@+id/EmailInput"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/PhoneLabel"
+            >
+            <com.rilixtech.CountryCodePicker
+                android:id="@+id/ccp_register"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                app:ccp_defaultNameCode="NG"
+                android:padding="10dp"
+                />
+
+            <EditText
+                android:id="@+id/text_register_phone"
+                android:layout_width="150dp"
+                android:layout_height="40dp"
+                android:layout_marginBottom="10dp"
+                android:inputType="phone"/>
+        </LinearLayout>
+
+    </RelativeLayout>
+
+    </ScrollView>
+
+    <RelativeLayout
+        android:id="@+id/rLBottom"
+        android:layout_width="match_parent"
+        android:layout_height="80dp"
+        android:layout_alignParentBottom="true">
+
+        <ImageView
+            android:id="@+id/NextPage"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
+            android:layout_margin="16dp"
+            android:layout_alignParentEnd="true"
+            android:background="@drawable/ic_next_action"
+            android:layout_alignParentRight="true" />
+
+    </RelativeLayout>
+
+
+</RelativeLayout>
